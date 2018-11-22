@@ -2,23 +2,7 @@
 
 > A Vue.js project
 
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 #vue_project 项目
 
@@ -29,6 +13,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ###图文资讯页面跳转 图文资讯列表数据渲染
 ###图文详情页面 数据加载 
 ###图文详情页评论数据加载
+#图片详情页面  缩略图功能实现  懒加载功能实现
 
 
 

@@ -50,6 +50,11 @@ module.exports = {
         }
       },
       {
+        test: /vue-preview.src.*?js$/,
+        loader: 'babel'
+    }
+      ,
+      {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
         loader: 'url-loader',
         options: {
@@ -78,5 +83,6 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
+
 }

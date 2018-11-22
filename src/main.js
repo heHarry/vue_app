@@ -14,12 +14,13 @@ Vue.http.options.root = "http://www.lovegf.cn:8899/";
 
 
 // 导入mint-ui组件
-import { Header,Swipe, SwipeItem ,Button } from "mint-ui"
+import { Header,Swipe, SwipeItem ,Button ,Lazyload } from "mint-ui"
 // 注册组件
 Vue.component(Header.name, Header)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
 Vue.component(Button.name, Button)
+Vue.use(Lazyload);
 
 // 导入mui样式
 import "./lib/mui/css/mui.min.css"
@@ -31,6 +32,9 @@ import moment from "moment"
 Vue.filter("dateTime",function(datestr,pattern= "YYYY-MM-DD HH:mm:ss"){
   return moment(datestr).format(pattern)
 })
+// 缩略图注册
+import VuePreview from 'vue2-preview'
+Vue.use(VuePreview)
 
 /* eslint-disable no-new */
 new Vue({

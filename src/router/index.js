@@ -7,6 +7,8 @@ import searchComponent from "../page/search/index.vue"
 import shopcarComponent from "../page/shopcar/index.vue"
 import newListComponent from "../page/newList"
 import newinfoComponent from "../page/newinfo"
+import photolistComponent from "../page/photolist"
+import photoImgComponent from "../page/infoimg"
 
 Vue.use(Router)
 
@@ -18,6 +20,8 @@ export default new Router({
   {path:"/search",component:searchComponent},
   {path:"/shopcar",component:shopcarComponent},
   {path:"/home/newlist",component:newListComponent},
-  {path:"/home/newinfo/:id",component:newinfoComponent}],
+  {path:"/home/newinfo/:id",component:newinfoComponent},
+  {path:"/home/photolist",component:photolistComponent},
+  {path:"/home/infophoto/:id",component:photoImgComponent}],
   linkActiveClass:"mui-active"
 })
